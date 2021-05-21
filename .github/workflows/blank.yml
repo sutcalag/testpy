@@ -66,8 +66,8 @@ jobs:
           sudo apt install python3-pip
           python3 --version
           pip3 --version
-          echo "install pluggy"
-          pip3 install pluggy==0.13.1
+          echo "install protobuf"
+          pip3 install protobuf==3.11.2
           echo "install pip"
           pip3 install -r requirements.txt -U --force-reinstall
           cd docs

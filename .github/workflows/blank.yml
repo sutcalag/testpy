@@ -62,12 +62,10 @@ jobs:
           sudo chmod -R 777 ${{ github.event.inputs.repoName }}
           cd ${{ github.event.inputs.repoName }}
           sudo apt update
-          sudo apt install python3
+          sudo apt install python3-dev
           sudo apt install python3-pip
           python3 --version
           pip3 --version
-          echo "install protobuf"
-          pip3 install protobuf==3.11.2
           echo "install pip"
           pip3 install -r requirements.txt -U --force-reinstall
           cd docs
